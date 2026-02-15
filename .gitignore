@@ -1,4 +1,6 @@
 
+
+№. gitignore for C++
 # --- Системные файлы ---
 .DS_Store
 Thumbs.db
@@ -32,6 +34,11 @@ Thumbs.db
 /bin/
 /lib/
 /dist/
+/out/
+/Debug/
+/Release/
+/x64/
+/x86/
 
 # --- Make и CMake ---
 Makefile
@@ -40,6 +47,8 @@ CMakeFiles/
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
+CTestTestfile.cmake
+Testing/
 
 # --- IDE ---
 .vscode/
@@ -54,7 +63,14 @@ compile_commands.json
 *.sln.docstates
 *.vcxproj.user
 
+# --- Ninja ---
+*.ninja
+.ninja_deps
+.ninja_log
+
 # --- Тесты и временные файлы ---
 *.log
 *.tmp
 *.swp
+*.bak
+*.old
